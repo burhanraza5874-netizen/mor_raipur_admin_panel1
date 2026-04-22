@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Raipur Admin | Officer List</title>
+    <title>Raipur Admin | Report</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="admin-common.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -14,15 +14,15 @@
         </aside>
         <div class="main">
             <div class="topbar">
-                <div>Officer List</div>
+                <div>Report</div>
                 <div>Hello Admin | Logout</div>
             </div>
             <div class="content">
                 <div class="card">
                     <div class="card-header">
-                        <div class="card-title">Officer Directory</div>
-                        <button class="btn btn-success">
-                            + Add New Officer
+                        <div class="card-title">Reports Dashboard</div>
+                        <button class="btn btn-primary">
+                            <i class="fas fa-download"></i> Export All
                         </button>
                     </div>
                     <div class="table-controls">
@@ -30,7 +30,7 @@
                             Show <select><option>10</option></select> entries
                         </div>
                         <div class="search-container">
-                            <input type="text" placeholder="Search...">
+                            <input type="text" placeholder="Search Reports...">
                             <button><i class="fa fa-search"></i></button>
                         </div>
                     </div>
@@ -39,20 +39,20 @@
                             <thead>
                                 <tr>
                                     <th>Sr. No.</th>
-                                    <th>Officer Name</th>
-                                    <th>Designation</th>
-                                    <th>Contact</th>
+                                    <th>Report Name</th>
+                                    <th>Generated Date</th>
+                                    <th>Type</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>Mr. R.K. Sahu</td>
-                                    <td>Commissioner</td>
-                                    <td>98260XXXXX</td>
+                                    <td>Monthly Grievance Report</td>
+                                    <td>2026-04-01</td>
+                                    <td>PDF</td>
                                     <td>
-                                        <button class="btn btn-primary">Edit</button>
+                                        <button class="btn btn-success">Download</button>
                                         <button class="btn btn-danger">Delete</button>
                                     </td>
                                 </tr>

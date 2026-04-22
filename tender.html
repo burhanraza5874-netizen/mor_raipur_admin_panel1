@@ -14,22 +14,8 @@
 
     <div class="layout">
 
-        <!-- ================= SIDEBAR ================= -->
         <aside class="sidebar">
-            <h2>RAIPUR ADMIN</h2>
-            <ul>
-                <li>Dashboard</li>
-                <li>Hall Booking</li>
-                <li class="active">Tender List</li>
-                <li>Upcoming Events</li>
-                <li>Gallery</li>
-                <li>Grievance</li>
-                <li>Facility</li>
-                <li>Officer List</li>
-                <li>For Raipurians</li>
-                <li>Report</li>
-                <li>Feedback</li>
-            </ul>
+            <!-- Sidebar content will be injected by sidebar.js -->
         </aside>
 
         <!-- ================= MAIN ================= -->
@@ -38,7 +24,7 @@
             <!-- TOPBAR -->
             <div class="topbar">
                 <div>Tender List</div>
-                <div>Hello Admin | Logout</div>
+                <div>Hello Admin | <a href="logout.php" style="color:red; text-decoration:none;">Logout</a></div>
             </div>
 
             <!-- CONTENT -->
@@ -210,6 +196,7 @@
         </div>
     </div>
 
+    <script src="sidebar.js"></script>
     <script src="tender.js"></script>
 </body>
 

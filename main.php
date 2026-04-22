@@ -11,6 +11,7 @@ include 'db_config.php';
 
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="admin-common.css">
 
 <style>
 body{font-family:Inter,sans-serif;background:#f3f4f6}
@@ -93,72 +94,8 @@ ADMIN PANEL
 </header>
 
 <!-- SIDEBAR -->
-<aside class="w-64 bg-[#0a192f] text-gray-300 flex flex-col">
-
-<div class="p-6 flex items-center space-x-3">
-<div class="bg-white p-2 rounded">
-<i class="fas fa-university text-[#0a192f]"></i>
-</div>
-<div>
-<p class="text-[15px] uppercase tracking-wider text-white-400">Raipur Municipal Corporation</p>
-</div>
-</div>
-
-<nav class="flex-1 px-4 space-y-1 text-sm">
-
-<div class="active-link p-3 mb-4 flex items-center space-x-3 rounded">
-<i class="fas fa-th-large"></i>
-<span>Dashboard</span>
-</div>
-
-<p class="text-[10px] uppercase font-bold text-gray-500 py-2">Management</p>
-
-<a href="tender.html" class="sidebar-item flex justify-between items-center p-2 rounded">
-<div class="flex items-center space-x-5">
-<i class="fas fa-file-invoice"></i><span><b><i>Tenders</i></b></span>
-</div>
-</a>
-
-<a href="grievance.html" class="sidebar-item flex justify-between items-center p-2 rounded">
-<div class="flex items-center space-x-4">
-<i class="fas fa-exclamation-circle"></i><span><b><i>Grievance</i></b></span>
-</div>
-</a>
-
-<a href="upcoming.html" class="sidebar-item flex items-center space-x-5 p-2 rounded">
-<i class="fas fa-calendar-alt"></i><span><b><i>Upcoming Events</i></b></span>
-</a>
-<a href="gallery.html" class="sidebar-item flex items-center space-x-4 p-2 rounded">
-    <i class="fas fa-images"></i><span><b><i>Gallery</i></b></span>
-</a>
-
-<a href="officer.html" class="sidebar-item flex items-center space-x-4 p-2 rounded">
-    <i class="fas fa-user-tie"></i><span><b><i>Officer List</i></b></span>
-</a>
-<p class="text-[10px] uppercase font-bold text-gray-500 py-6">Public Services</p>
-
-<a href="hall.html" class="sidebar-item flex items-center space-x-4 p-2 rounded">
-    <i class="fas fa-key"></i><span><b><i>Hall Booking</i></b></span>
-</a>
-
-<a href="raipurian.html" class="sidebar-item flex items-center space-x-4 p-2 rounded">
-    <i class="fas fa-users"></i><span><b><i>For Raipurians</i></b></span>
-</a>
-<a href="update.html" class="sidebar-item flex items-center space-x-4 p-2 rounded">
-<i class="fas fa-edit"></i><span><b><i>Detail Update</i></b></span>
-</a>
-
-<a href="Watertank.html" class="sidebar-item flex items-center space-x-4 p-2 rounded">
-    <i class="fas fa-tint"></i><span><b><i>Water Tank</i></b></span>
-</a>
-<a href="feedback.html" class="sidebar-item flex items-center space-x-4 p-2 rounded">
-    <i class="fas fa-comment-dots"></i><span><b><i>Feedback</i></b></span>
-</a>
-<a href="Report.html" class="sidebar-item flex items-center space-x-4 p-2 rounded">
-    <i class="fas fa-chart-line"></i><span><b><i>Reports</i></b></span>
-</a>
-
-</nav>
+<aside class="sidebar">
+    <!-- Sidebar content will be injected by sidebar.js -->
 </aside>
 
 <!-- MAIN -->
@@ -301,17 +238,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </footer>
 </main>
 
-<script>
-const navItems=document.querySelectorAll('.sidebar-item');
-navItems.forEach(item=>{
-item.addEventListener('click',function(){
-navItems.forEach(i=>i.classList.remove('active-link'));
-this.classList.add('active-link');
-});
-});
-</script>
-
-
+<script src="sidebar.js"></script>
 </body>
 </html>
 
